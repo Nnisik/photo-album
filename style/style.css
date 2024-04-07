@@ -85,30 +85,37 @@ header {
 }
 
 .post {
-    background: palegreen;
     border-radius: 12px;
     position: relative;
+    background: white;
 }
 
 .post-img {
     position: relative;
     width: calc((1200px - 20px)/3);
     aspect-ratio: 1/1;
-    background: palevioletred;
+    border-radius: 12px 12px 0 0;
 }
 
 .delete-btn {
     position: absolute;
     top: 10px;
-    right: -10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background: url("../assets/icons/icons8-trash-24.png");
+    border: none;
+    outline: none;
 }
 
 .post-info {
-    background: white;
     color: black;
     display: flex;
     justify-content: space-between;
-    padding: 3vh 2vh;
+    padding: 2vh 2vh 3vh;
     border-radius: 0 0 12px 12px;
 }
 
@@ -116,4 +123,31 @@ header {
     font-size: 30px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.like-btn {
+    position: relative; 
+    width: 25px; 
+    height: 22px; 
+}
+
+.like-btn::before, .like-btn::after {
+    position: absolute; 
+    content: ""; 
+    left: 0px; 
+    top: 5; 
+    width: 25px; 
+    height: 40px;
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+    border: 1px solid black;
+}
+
+.like-btn::after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin :50% 55%;
+    height: 16px;
+    border-bottom: none;
 }
