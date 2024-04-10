@@ -24,10 +24,7 @@ const drawPostElement = (header, liked, img) => {
     const likeStatus = document.createElement("div");
     likeStatus.className = "like-btn";
     if (liked) {
-        likeStatus.style.background = "red";
-    }
-    else {
-        likeStatus.style.background = "white";
+        likeStatus.classList.toggle("liked");
     }
     postsInfoSection.appendChild(likeStatus);
     newElement.appendChild(postsInfoSection);
