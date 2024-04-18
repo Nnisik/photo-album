@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Карачаевск",
+    "image": "",
+    "like": false
+  },
+  {
+    "id": 2,
+    "name": "Гора Эльбрус",
+    "image": "",
+    "like": true
+  },
+  {
+    "id": 3,
+    "name": "Домбай",
+    "image": "",
+    "like": false
+  }
+]
