@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -25,7 +26,6 @@ header {
 }
 
 .header {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
     position: relative;
     width: fit-content;
@@ -67,7 +67,6 @@ header {
 .username {
     font-size: 24px;
     letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .add-btn {
@@ -79,7 +78,6 @@ header {
     background: transparent;
     color: white;
     border: 3px solid white;
-    font-family: Arial, Helvetica, sans-serif;
     transition-duration: 0.3s;
 }
 
@@ -132,7 +130,6 @@ header {
 .post-header {
     font-size: 30px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .like-btn {
@@ -167,4 +164,86 @@ header {
 .liked::after {
     background: red;
     border: none;
+}
+
+#add-new-pop-up {
+    width: 99%;
+    height: 99%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8.8px);
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-new-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transform: translateX(65px);
+}
+
+#close-modal-btn {
+    font-size: 5vh;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    transform: translateX(5vh);
+    height: fit-content;
+    border: none;
+    outline: none;
+    position: relative;
+    font-weight: 100;
+}
+
+.add-new-form {
+    width: 120%;
+    padding: 4vh 3vh;
+    border-radius: 12px;
+    height: fit-content;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-new-form div {
+    margin: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.add-new-form input {
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    font-size: 16px;
+    color: black;
+}
+
+.add-new-form input::placeholder {
+    color: grey;
+}
+
+.add-new-form_header {
+    font-size: 4vh;
+}
+
+#create-new-btn {
+    width: 100%;
+    height: 5vh;
+    border: 1px solid grey;
+    color: grey;
+    background: transparent;
+    font-size: 20px;
+    margin-top: 2vh;
 }

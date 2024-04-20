@@ -22,10 +22,35 @@
           </section>
           <button class="add-btn" id="add">+</button>
         </article>
-        <article class="gallery" id="gallery">
-        </article>
+        <article class="gallery" id="gallery"></article>
+        <dialog id="add-new-pop-up">
+          <div class="add-new-container">
+            <button id="close-modal-btn">x</button>
+            <form action="./index.html" class="add-new-form">
+              <h1 class="add-new-form_header">Новое место</h1>
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  id="add-new_name-input"
+                  placeholder="Название"
+                  class="form-input"
+                />
+                <input
+                  type="text"
+                  name="img-link"
+                  id="add-new_img-input"
+                  placeholder="Ссылка на изображение"
+                  class="form-input"
+                />
+              </div>
+              <button type="submit" id="create-new-btn">Создать</button>
+            </form>
+          </div>
+        </dialog>
       </main>
     </div>
     <script src="./js/gallery.js"></script>
+    <script src="./js/add-new.js"></script>
   </body>
 </html>
