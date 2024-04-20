@@ -16,7 +16,7 @@ window.onload = () => {
         // post delete button
         const deleteBtn = document.createElement("button");
         deleteBtn.classList.add("delete-btn");
-        deleteBtn.setAttribute("data-like", post["like"]);
+        deleteBtn.setAttribute("data-id", post["id"]);
         postContainer.appendChild(deleteBtn);
         // post information section
         const postInfoSection = document.createElement("section");
