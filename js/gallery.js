@@ -10,7 +10,7 @@ window.onload = () => {
         postContainer.classList.add("post");
         // post image const
         postImage = document.createElement("img");
-        postImage.src = "../assets/IMG_1286.JPG";
+        postImage.src = post["image"];
         postImage.classList.add("post-img");
         postContainer.appendChild(postImage);
         // post delete button
