@@ -30,7 +30,6 @@ header {
   position: relative;
   width: fit-content;
 }
-
 .header::after {
   content: "Russia";
   position: absolute;
@@ -53,7 +52,7 @@ header {
   align-items: center;
 }
 
-.profile-img {
+#profile-img {
   height: 8vh;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -79,7 +78,6 @@ header {
   border: 3px solid rgb(255, 255, 255);
   transition-duration: 0.3s;
 }
-
 .add-btn:hover {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -113,7 +111,7 @@ header {
   font-size: 25px;
   font-weight: bold;
   color: rgb(255, 255, 255);
-  background: url("../assets/icons/icons8-trash-24.png");
+  background: url("../images/icons/icons8-trash-24.png");
   border: none;
   outline: none;
 }
@@ -137,7 +135,6 @@ header {
   height: 22px;
   cursor: pointer;
 }
-
 .like-btn::before, .like-btn::after {
   position: absolute;
   content: "";
@@ -150,7 +147,6 @@ header {
   transform-origin: 0 100%;
   border: 1px solid rgb(0, 0, 0);
 }
-
 .like-btn::after {
   left: 0;
   transform: rotate(45deg);
@@ -228,7 +224,6 @@ header {
   font-size: 16px;
   color: rgb(0, 0, 0);
 }
-
 .add-new-form input::placeholder {
   color: rgb(170, 170, 170);
 }

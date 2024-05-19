@@ -3,6 +3,7 @@ window.onload = () => {
   fetch("../data/data-posts.json")
     .then((response) => response.json())
     .then((json) => {
+      // FIXME: doesn't draw anything
       json.map((post) => {
         // post container
         const postContainer = document.createElement("section");

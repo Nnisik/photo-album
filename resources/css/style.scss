@@ -33,22 +33,22 @@ header {
     font-size: 36px;
     position: relative;
     width: fit-content;
-}
 
-.header::after {
-    content: "Russia";
-    position: absolute;
-    font-size: 16px;
-    font-weight: 200;
-    color: $textColor;
-    top: 0;
-    left: 100%;
+    &::after {
+        content: "Russia";
+        position: absolute;
+        font-size: 16px;
+        font-weight: 200;
+        color: $textColor;
+        top: 0;
+        left: 100%;
+    }
 }
 
 .user {
     height: fit-content;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 .user-profile {
@@ -57,7 +57,7 @@ header {
     align-items: center;
 }
 
-.profile-img {
+#profile-img {
     height: 8vh;
     aspect-ratio: 1/1;
     border-radius: 50%;
@@ -82,11 +82,11 @@ header {
     color: $textColor;
     border: 3px solid $textColor;
     transition-duration: 0.3s;
-}
 
-.add-btn:hover {
-    background: $textColor;
-    color: $bgColor;
+    &:hover {
+        background: $textColor;
+        color: $bgColor;
+    }
 }
 
 .gallery {
@@ -117,7 +117,7 @@ header {
     font-size: 25px;
     font-weight: bold;
     color: $textColor;
-    background: url("../assets/icons/icons8-trash-24.png");
+    background: url("../images/icons/icons8-trash-24.png");
     border: none;
     outline: none;
 }
@@ -136,31 +136,32 @@ header {
 }
 
 .like-btn {
-    position: relative; 
-    width: 25px; 
+    position: relative;
+    width: 25px;
     height: 22px;
-    cursor: pointer; 
-}
+    cursor: pointer;
 
-.like-btn::before, .like-btn::after {
-    position: absolute; 
-    content: ""; 
-    left: 0px; 
-    top: 5; 
-    width: 25px; 
-    height: 40px;
-    border-radius: 50px 50px 0 0; 
-    transform: rotate(-45deg); 
-    transform-origin: 0 100%; 
-    border: 1px solid $bgColor;
-}
+    &::before,
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 5;
+        width: 25px;
+        height: 40px;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        border: 1px solid $bgColor;
+    }
 
-.like-btn::after { 
-    left: 0; 
-    transform: rotate(45deg); 
-    transform-origin :50% 55%;
-    height: 16px;
-    border-bottom: none;
+    &::after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 50% 55%;
+        height: 16px;
+        border-bottom: none;
+    }
 }
 
 .liked::before,
@@ -231,10 +232,10 @@ header {
     outline: none;
     font-size: 16px;
     color: $bgColor;
-}
-
-.add-new-form input::placeholder {
-    color: $detailsColor;
+    
+    &::placeholder {
+        color: $detailsColor;
+    }
 }
 
 .add-new-form_header {
