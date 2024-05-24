@@ -240,6 +240,11 @@ header {
   background: transparent;
   font-size: 20px;
   margin-top: 2vh;
+  transition-duration: 0.5s;
+}
+#create-new-btn:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */

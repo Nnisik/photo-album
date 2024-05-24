@@ -12,5 +12,5 @@ Interactive online photo gallery for sharing images.
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 ### TODO
-* reconnect js files
 * change like icon to svg-element
+* add option to add new posts

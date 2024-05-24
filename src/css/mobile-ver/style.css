@@ -1,0 +1,54 @@
+@media only screen and (max-width: 600px) {
+    html, 
+    body,
+    .app {
+        width: 100%;
+        max-width: 600px;
+        overflow-x: hidden;
+    }
+
+    main {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header {
+        width: fit-content;
+    }
+    
+    .user {
+        margin: 0 5px;
+    }
+
+    .username {
+        font-size: 2vh;
+    }
+
+    .about {
+        font-size: 14px;
+    }
+    
+    .add-btn {    
+        height: 30px;
+        aspect-ratio: 1/1;
+        font-size: 18px;
+        margin: auto 0;
+    }
+
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .post {
+        margin: 0 9px;
+        width: 355px;
+    }
+
+    .post-img {
+        width: 355px;
+    }
+}
