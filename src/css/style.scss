@@ -187,73 +187,149 @@ header {
     align-items: center;
 }
 
-.add-new-container {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    transform: translateX(65px);
-}
-
-#close-modal-btn {
-    font-size: 5vh;
-    background: transparent;
-    color: $textColor;
-    font-weight: bold;
-    width: fit-content;
-    transform: translateX(5vh);
-    height: fit-content;
-    border: none;
-    outline: none;
-    position: relative;
-    font-weight: 100;
-}
-
-.add-new-form {
-    width: 120%;
-    padding: 4vh 3vh;
-    border-radius: 12px;
-    height: fit-content;
-    background: $textColor;
-    display: flex;
-    flex-direction: column;
-}
-
-.add-new-form div {
-    margin: 2vh 0;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.add-new-form input {
-    height: 5vh;
-    border: none;
-    border-bottom: 1px solid $detailsColor;
-    outline: none;
-    font-size: 16px;
-    color: $bgColor;
+@media only screen and (min-width: 601px) {
+    .add-new-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        transform: translateX(65px);
+    }
     
-    &::placeholder {
+    #close-modal-btn {
+        font-size: 5vh;
+        background: transparent;
+        color: $textColor;
+        font-weight: bold;
+        width: fit-content;
+        transform: translateX(5vh);
+        height: fit-content;
+        border: none;
+        outline: none;
+        position: relative;
+        font-weight: 100;
+    }
+    
+    .add-new-form {
+        width: 120%;
+        padding: 4vh 3vh;
+        border-radius: 12px;
+        height: fit-content;
+        background: $textColor;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .add-new-form div {
+        margin: 2vh 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    
+    .add-new-form input {
+        height: 5vh;
+        border: none;
+        border-bottom: 1px solid $detailsColor;
+        outline: none;
+        font-size: 16px;
+        color: $bgColor;
+    
+        &::placeholder {
+            color: $detailsColor;
+        }
+    }
+    
+    .add-new-form_header {
+        font-size: 4vh;
+    }
+    
+    #create-new-btn {
+        width: 100%;
+        height: 5vh;
+        border: 1px solid $detailsColor;
         color: $detailsColor;
+        background: transparent;
+        font-size: 20px;
+        margin-top: 2vh;
+        transition-duration: 0.5s;
+    
+        &:hover {
+            background: $bgColor;
+            color: $textColor;
+        }
     }
 }
 
-.add-new-form_header {
-    font-size: 4vh;
-}
+@media only screen and (max-width: 600px) {
+    html, body {
+        max-width: 599px;
+    }
 
-#create-new-btn {
-    width: 100%;
-    height: 5vh;
-    border: 1px solid $detailsColor;
-    color: $detailsColor;
-    background: transparent;
-    font-size: 20px;
-    margin-top: 2vh;
-    transition-duration: 0.5s;
+    .app {
+        width: 100%;
+    }
 
-    &:hover {
-        background: $bgColor;
-        color: $textColor;
+    .user {
+        width: fit-content;
+    }
+
+    #profile-img {
+        margin: 0 1vh;
+    }
+
+    .user-info {
+        margin: 0;
+    }
+
+    .username {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .add-btn {
+        height: 3vh;
+        aspect-ratio: 1/1;
+        margin: auto 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 5vh;
+    }
+
+    .post {
+        width: 80%;
+    }
+
+    .post-img {
+        width: 100%;
+    }
+
+    .add-new-container {
+        background: $textColor;
+        padding: 3vh 1vh;
+        transform: translate(-20%, -40%);
+        border-radius: 12px;
+    }
+
+    .add-new-form {
+        width: fit-content;
+        padding: 2vh 1vh;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-new-form h1 {
+        font-size: 3vh;
+    }
+
+    .add-new-form div {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
     }
 }

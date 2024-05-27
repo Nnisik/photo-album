@@ -1,54 +1,17 @@
-@media only screen and (max-width: 600px) {
-    html, 
-    body,
-    .app {
-        width: 100%;
-        max-width: 600px;
-        overflow-x: hidden;
-    }
+/* Error: Undefined variable.
+ *    ,
+ * 54 |         background: $textColor;
+ *    |                     ^^^^^^^^^^
+ *    '
+ *   style.scss 54:21  root stylesheet */
 
-    main {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .header {
-        width: fit-content;
-    }
-    
-    .user {
-        margin: 0 5px;
-    }
-
-    .username {
-        font-size: 2vh;
-    }
-
-    .about {
-        font-size: 14px;
-    }
-    
-    .add-btn {    
-        height: 30px;
-        aspect-ratio: 1/1;
-        font-size: 18px;
-        margin: auto 0;
-    }
-
-    #gallery {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .post {
-        margin: 0 9px;
-        width: 355px;
-    }
-
-    .post-img {
-        width: 355px;
-    }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 54 \2502          background: $textColor;\d\a    \2502                      ^^^^^^^^^^\a    \2575 \a   style.scss 54:21  root stylesheet";
 }
