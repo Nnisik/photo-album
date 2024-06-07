@@ -1,16 +1,15 @@
-let galleryContainer = document.getElementById("gallery");
-window.onload = () => {
-  fetch("../data/data-posts.json")
+export default async function drawGallery() {
+  const JSONFilePath = '../src/data/data-posts.json';
+  fetch(JSONFilePath)
     .then((response) => response.json())
     .then((json) => {
-      // FIXME: doesn't draw anything
       json.map((post) => {
         // post container
         const postContainer = document.createElement("section");
         postContainer.setAttribute("data-id", post["id"]);
         postContainer.classList.add("post");
         // post image const
-        postImage = document.createElement("img");
+        const postImage = document.createElement("img");
         postImage.src = post["image"];
         postImage.classList.add("post-img");
         postContainer.appendChild(postImage);
@@ -38,5 +37,5 @@ window.onload = () => {
         postContainer.appendChild(postInfoSection);
         document.querySelector("#gallery").appendChild(postContainer);
       });
-    });
-};
+  });
+}

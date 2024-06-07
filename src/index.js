@@ -1,18 +1,14 @@
-import createNewPost from "./js/add-new";
+import closeModalWindow, { openModalWindow } from "./js/dialog.js";
+import drawGallery from './js/gallery.js';
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector("#add-new-pop-up").style.display = 'none';
+document.addEventListener('DOMContentLoaded', () => {
+  drawGallery();
 });
 
-document.querySelector("#add").addEventListener("click", function () {
-  document.querySelector("#add-new-pop-up").style.display = 'flex';
+document.getElementById("add").addEventListener("click", () => {
+  openModalWindow();
 });
 
-document.querySelector("#close-modal-btn").addEventListener("click", function () {
-    console.log("Button clicked!");
-    document.querySelector("#add-new-pop-up").style.display = 'none';
-});
-
-document.querySelector("#create-new-btn").addEventListener("click", () => {
-  createNewPost();
+document.getElementById("close-modal-btn").addEventListener("click", () => {
+  closeModalWindow();
 });
