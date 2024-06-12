@@ -1,0 +1,73 @@
+@media only screen and (max-width: 600px) {
+    html, body {
+        max-width: 599px;
+    }
+
+    .app {
+        width: 100%;
+    }
+
+    .user {
+        width: fit-content;
+    }
+
+    #profile-img {
+        margin: 0 1vh;
+    }
+
+    .user-info {
+        margin: 0;
+    }
+
+    .username {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .add-btn {
+        height: 3vh;
+        aspect-ratio: 1/1;
+        margin: auto 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 5vh;
+    }
+
+    .post {
+        width: 80%;
+    }
+
+    .post-img {
+        width: 100%;
+    }
+
+    .add-new-container {
+        background: rgb(255, 255, 255);;
+        padding: 3vh 1vh;
+        transform: translate(-20%, -40%);
+        border-radius: 12px;
+    }
+
+    .add-new-form {
+        width: fit-content;
+        padding: 2vh 1vh;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-new-form h1 {
+        font-size: 3vh;
+    }
+
+    .add-new-form div {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+}
