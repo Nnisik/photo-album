@@ -13,13 +13,7 @@ button {
   cursor: pointer;
 }
 
-.app {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 header {
-  height: 10vh;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -48,18 +42,12 @@ header {
 
 .user-profile {
   display: flex;
-  margin: 3vh 0;
   align-items: center;
 }
 
 #profile-img {
-  height: 8vh;
   aspect-ratio: 1/1;
   border-radius: 50%;
-}
-
-.user-info {
-  margin: 0 3vh;
 }
 
 .username {
@@ -68,9 +56,7 @@ header {
 }
 
 .add-btn {
-  height: 5vh;
   aspect-ratio: 5/2;
-  margin: 4vh 0;
   font-size: 36px;
   font-weight: 100;
   background: transparent;
@@ -161,6 +147,28 @@ header {
   visibility: hidden;
 }
 
+@media only screen and (min-width: 451px) {
+  .app {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    height: 80px;
+  }
+  #profile-img {
+    height: 80px;
+  }
+  .user-info {
+    margin-left: 30px;
+  }
+  .user-profile {
+    margin: 1rem 0;
+  }
+  .add-btn {
+    height: 3rem;
+    margin: auto 0;
+  }
+}
 @media only screen and (min-width: 601px) {
   .add-new-container {
     display: flex;
