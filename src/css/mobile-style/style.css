@@ -1,35 +1,34 @@
 @media only screen and (max-width: 450px) {
-    .header,
-    .user, 
-    #gallery {
-        margin: 1rem;
-    }
-
-    .header {
-        font-size: 30px;
-
-        &::after {
-            font-size: 16px;
-            left: calc(100% + (1rem / 2));
-        }
-    }
-
-    .user {
-        margin-bottom: 2rem;
-    }
-
-    #profile-img {
-        height: 5rem;
-    }
-
-    .add-btn {
-        height: 3rem;
-        aspect-ratio: 1/1;
-        margin: auto 0;
-    }
-
-    #gallery {
-        display: flex;
-        flex-direction: column;
-    }
+  .header,
+  .user,
+  #gallery {
+    margin: 1rem;
+  }
+  .header {
+    font-size: 30px;
+  }
+  .header::after {
+    font-size: 16px;
+    left: calc(100% + 0.5rem);
+  }
+  .user {
+    margin-bottom: 2rem;
+  }
+  .user-info {
+    margin-left: 0.5rem;
+  }
+  #profile-img {
+    height: 5rem;
+  }
+  .add-btn {
+    height: 3rem;
+    aspect-ratio: 1/1;
+    margin: auto 0;
+  }
+  #gallery {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
