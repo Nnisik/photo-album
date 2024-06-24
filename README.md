@@ -17,7 +17,5 @@ Interactive online photo gallery for sharing images.
 
 ### TODO
 * add option to add new posts
+* add option to delete posts
 * like/dislike animations
-
-### Issues
-* rework mobile layout to remove all random gaps and so on

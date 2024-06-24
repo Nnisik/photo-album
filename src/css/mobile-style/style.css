@@ -1,7 +1,4 @@
 @media only screen and (max-width: 450px) {
-  * {
-    border: 1px solid pink;
-  }
   .header,
   .user,
   #gallery {
@@ -24,7 +21,7 @@
     height: 5rem;
   }
   .post {
-    width: 80%;
+    width: 100%;
   }
   .post-img {
     width: 100%;
