@@ -1,4 +1,7 @@
 @media only screen and (max-width: 450px) {
+  * {
+    border: 1px solid pink;
+  }
   .header,
   .user,
   #gallery {
@@ -20,6 +23,12 @@
   #profile-img {
     height: 5rem;
   }
+  .post {
+    width: 80%;
+  }
+  .post-img {
+    width: 100%;
+  }
   .add-btn {
     height: 3rem;
     aspect-ratio: 1/1;
@@ -28,6 +37,7 @@
   #gallery {
     display: flex;
     flex-direction: column;
+    width: fit-content;
   }
 }
 

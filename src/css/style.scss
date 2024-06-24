@@ -1,5 +1,5 @@
-$bgColor: rgb(0, 0, 0);
-$textColor: rgb(255, 255, 255);
+$bgColor: rgb(10, 10, 10);
+$textColor: rgb(250, 250, 250);
 $detailsColor: rgb(170, 170, 170);
 
 * {
@@ -21,6 +21,7 @@ header {
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    height: 80px;
 }
 
 .header {
@@ -76,8 +77,8 @@ header {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, calc((1200px - 20px)/3));
+    display: flex;
+    flex: 1;
     gap: 10px;
 }
 
@@ -85,11 +86,13 @@ header {
     border-radius: 12px;
     position: relative;
     background: $textColor;
+    max-width: 400px;
 }
 
 .post-img {
     position: relative;
-    width: calc((1200px - 20px)/3);
+    width: 100%;
+    height: 400px;
     aspect-ratio: 1/1;
     border-radius: 12px 12px 0 0;
 }
@@ -124,6 +127,7 @@ header {
 .like-btn {
     position: relative;
     cursor: pointer;
+    border: 3px solid pink;
 
     &::after {
         content: " ";
@@ -132,8 +136,21 @@ header {
         position: absolute;
         top: -5px;
         left: -25px;
-        background-image: url('../images/svg/heart-svgrepo-com.svg');
+        background-image: url('../images/svg/heart-svgrepo-com\ \(1\).svg');
     }
+}
+
+.like-btn:checked {
+    &::after {
+        background-image: url('../images/svg/heart-liked.svg');
+    }
+}
+
+.empty-heart {
+    stroke: #3b3b3b;
+    stroke-width: 5;
+    stroke-dasharray: 2,2;
+    stroke-linejoin: round;
 }
 
 #add-new-pop-up {
@@ -158,10 +175,6 @@ header {
     .app {
         width: 1200px;
         margin: 0 auto;
-    }
-
-    header {
-        height: 80px;
     }
 
     #profile-img {

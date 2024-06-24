@@ -12,3 +12,9 @@ document.getElementById("add").addEventListener("click", () => {
 document.getElementById("close-modal-btn").addEventListener("click", () => {
   closeModalWindow();
 });
+
+document.querySelectorAll("like-btn").forEach((button) => {
+  button.onchange = () => {
+    console.log(button.id);
+  }
+})

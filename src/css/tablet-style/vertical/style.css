@@ -1,0 +1,34 @@
+@media only screen and (min-width: 451px) and (max-width: 1000px) {
+    .app {
+        width: 80%;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    .header {
+        font-size: 28px;
+    
+        &::after {
+            font-size: 12px;
+            left: 102%;
+        }
+    }
+
+    .user {
+        margin-bottom: 1rem;
+    }
+
+    #profile-img {
+        height: 60px;
+    }
+
+    .gallery {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, calc((100% - 10px)/2));
+    }
+
+    .post {}
+}

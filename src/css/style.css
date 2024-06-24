@@ -5,8 +5,8 @@
 }
 
 body {
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background: rgb(10, 10, 10);
+  color: rgb(250, 250, 250);
 }
 
 button {
@@ -17,6 +17,7 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  height: 80px;
 }
 
 .header {
@@ -29,7 +30,7 @@ header {
   position: absolute;
   font-size: 16px;
   font-weight: 200;
-  color: rgb(255, 255, 255);
+  color: rgb(250, 250, 250);
   top: 0;
   left: 100%;
 }
@@ -60,30 +61,32 @@ header {
   font-size: 36px;
   font-weight: 100;
   background: transparent;
-  color: rgb(255, 255, 255);
-  border: 3px solid rgb(255, 255, 255);
+  color: rgb(250, 250, 250);
+  border: 3px solid rgb(250, 250, 250);
   transition-duration: 0.3s;
 }
 .add-btn:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: rgb(250, 250, 250);
+  color: rgb(10, 10, 10);
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 393.3333333333px);
+  display: flex;
+  flex: 1;
   gap: 10px;
 }
 
 .post {
   border-radius: 12px;
   position: relative;
-  background: rgb(255, 255, 255);
+  background: rgb(250, 250, 250);
+  max-width: 400px;
 }
 
 .post-img {
   position: relative;
-  width: 393.3333333333px;
+  width: 100%;
+  height: 400px;
   aspect-ratio: 1/1;
   border-radius: 12px 12px 0 0;
 }
@@ -96,14 +99,14 @@ header {
   height: 25px;
   font-size: 25px;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: rgb(250, 250, 250);
   background: url("../images/icons/icons8-trash-24.png");
   border: none;
   outline: none;
 }
 
 .post-info {
-  color: rgb(0, 0, 0);
+  color: rgb(10, 10, 10);
   display: flex;
   justify-content: space-between;
   padding: 2vh 2vh 3vh;
@@ -118,6 +121,7 @@ header {
 .like-btn {
   position: relative;
   cursor: pointer;
+  border: 3px solid pink;
 }
 .like-btn::after {
   content: " ";
@@ -126,7 +130,18 @@ header {
   position: absolute;
   top: -5px;
   left: -25px;
-  background-image: url("../images/svg/heart-svgrepo-com.svg");
+  background-image: url("../images/svg/heart.svg");
+}
+
+.like-btn:checked::after {
+  background-image: url("../images/svg/heart-liked.svg");
+}
+
+.empty-heart {
+  stroke: #3b3b3b;
+  stroke-width: 5;
+  stroke-dasharray: 2, 2;
+  stroke-linejoin: round;
 }
 
 #add-new-pop-up {
@@ -152,9 +167,6 @@ header {
     width: 1200px;
     margin: 0 auto;
   }
-  header {
-    height: 80px;
-  }
   #profile-img {
     height: 80px;
   }
@@ -179,7 +191,7 @@ header {
   #close-modal-btn {
     font-size: 5vh;
     background: transparent;
-    color: rgb(255, 255, 255);
+    color: rgb(250, 250, 250);
     font-weight: bold;
     width: fit-content;
     transform: translateX(5vh);
@@ -194,7 +206,7 @@ header {
     padding: 4vh 3vh;
     border-radius: 12px;
     height: fit-content;
-    background: rgb(255, 255, 255);
+    background: rgb(250, 250, 250);
     display: flex;
     flex-direction: column;
   }
@@ -210,7 +222,7 @@ header {
     border-bottom: 1px solid rgb(170, 170, 170);
     outline: none;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(10, 10, 10);
   }
   .add-new-form input::placeholder {
     color: rgb(170, 170, 170);
@@ -229,8 +241,8 @@ header {
     transition-duration: 0.5s;
   }
   #create-new-btn:hover {
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background: rgb(10, 10, 10);
+    color: rgb(250, 250, 250);
   }
 }
 
