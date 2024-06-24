@@ -6,9 +6,6 @@ Interactive online photo gallery for sharing images.
 * JavaScript
 * HTML
 
-## Functionality
-* 
-
 ## Badges
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
