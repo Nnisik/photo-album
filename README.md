@@ -16,3 +16,7 @@ Interactive online photo gallery for sharing images.
 * add option to add new posts
 * add option to delete posts
 * like/dislike animations
+
+
+### Issues
+* fix form for creating new posts for mobile devices
