@@ -1,5 +1,5 @@
-import closeModalWindow, { openModalWindow } from "./js/dialog.js";
-import drawGallery from './js/gallery.js';
+import closeModalWindow, { openModalWindow } from "./src/js/dialog.js";
+import drawGallery from './src/js/gallery.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   drawGallery();

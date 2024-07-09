@@ -19,4 +19,4 @@ Interactive online photo gallery for sharing images.
 
 
 ### Issues
-* fix form for creating new posts for mobile devices
+* posts appear only using live server
