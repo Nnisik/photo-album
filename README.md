@@ -31,9 +31,20 @@ To get a local copy of this project up and running, follow these steps
 3. Open index.html in your preferred browser.
 
 ### Future Improveemnts
-* add option to add new posts
-* add option to delete posts
-* like/dislike animations
+* Work with commented code sections
+* Finnish form
+   * User-side form validation
+   * Error messages
+* Translate all page elements to English
+* Transfer some functionality to JS from CSS
+* Commenting
+* Error hangling (everywhere)
+* Event handlings
 
 ### Known Issues
-* posts appear only using live server
+* Semantic class names
+* Consistent sizing
+* Switch from IDs to classes for like buttons
+* Explicit logic for user selection
+* Validation JSON data
+* Improve user experience
