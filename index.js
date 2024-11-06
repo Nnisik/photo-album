@@ -1,10 +1,15 @@
-import closeModalWindow, { openModalWindow } from "./src/js/dialog.js";
+// Import the drawGallery function from the gallery.js file
 import drawGallery from './src/js/gallery.js';
 
+// Add an event listener for when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
+  // Call the drawGallery function to initialize or render the gallery
   drawGallery();
 });
 
+
+/*
+FIXME: can not find an element
 document.getElementById("add").addEventListener("click", () => {
   openModalWindow();
 });
@@ -22,3 +27,4 @@ document.getElementById("close-modal-btn").addEventListener("click", () => {
 document.getElementById("create-new-btn").addEventListener("click", () => {
   createNewPost();
 });
+*/

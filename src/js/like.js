@@ -1,3 +1,4 @@
 export default function likePost(postID) {
-    console.log(postID);
+    console.log("like button clicked");
+    // console.log(postID);
 }

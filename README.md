@@ -40,7 +40,6 @@ To get a local copy of this project up and running, follow these steps:
 3. Open index.html in your preferred browser.
 
 ### Currently Working On
-* Semantic class naming needs improvement
 
 ### Future Improvements
 * Implement user-side form validation with error messaging.

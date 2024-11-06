@@ -21,14 +21,14 @@ header {
 }
 
 .header {
-  font-size: 36px;
+  font-size: 2.1rem;
   position: relative;
   width: fit-content;
 }
 .header::after {
-  content: "Russia";
+  content: "*";
   position: absolute;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
   color: rgb(250, 250, 250);
   top: 0;
@@ -39,9 +39,10 @@ header {
   height: fit-content;
   display: flex;
   justify-content: space-between;
+  margin: 1rem 0 2rem;
 }
 
-.user-profile {
+.user .profile {
   display: flex;
   align-items: center;
 }
@@ -51,42 +52,42 @@ header {
   border-radius: 50%;
 }
 
-.username {
-  font-size: 24px;
-  letter-spacing: 2px;
+#username {
+  font-size: 2rem;
+  letter-spacing: 3px;
 }
 
-.add-btn {
+#add-btn {
+  height: 2.5rem;
   aspect-ratio: 5/2;
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 100;
   background: transparent;
   color: rgb(250, 250, 250);
-  border: 3px solid rgb(250, 250, 250);
+  border: 0.15rem solid rgb(250, 250, 250);
   transition-duration: 0.3s;
+  margin: auto 0;
 }
-.add-btn:hover {
+#add-btn:hover {
   background: rgb(250, 250, 250);
   color: rgb(10, 10, 10);
 }
 
-.gallery {
-  display: flex;
-  flex: 1;
-  gap: 10px;
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
 }
 
 .post {
   border-radius: 12px;
   position: relative;
   background: rgb(250, 250, 250);
-  max-width: 400px;
 }
 
 .post-img {
   position: relative;
   width: 100%;
-  height: 400px;
   aspect-ratio: 1/1;
   border-radius: 12px 12px 0 0;
 }
@@ -97,9 +98,6 @@ header {
   right: 10px;
   width: 25px;
   height: 25px;
-  font-size: 25px;
-  font-weight: bold;
-  color: rgb(250, 250, 250);
   background: url("../images/icons/icons8-trash-24.png");
   border: none;
   outline: none;
@@ -114,19 +112,18 @@ header {
 }
 
 .post-header {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .like-btn {
   position: relative;
   cursor: pointer;
-  border: 3px solid pink;
 }
 .like-btn::after {
   content: " ";
   width: 45px;
-  height: 45px;
+  aspect-ratio: 1/1;
   position: absolute;
   top: -5px;
   left: -25px;
@@ -135,13 +132,6 @@ header {
 
 .like-btn:checked::after {
   background-image: url("../images/svg/heart-liked.svg");
-}
-
-.empty-heart {
-  stroke: #3b3b3b;
-  stroke-width: 5;
-  stroke-dasharray: 2, 2;
-  stroke-linejoin: round;
 }
 
 #add-new-pop-up {
@@ -153,7 +143,7 @@ header {
   left: 0;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8.8px);
+  backdrop-filter: blur(8px);
   border: none;
   outline: none;
   display: flex;
@@ -192,7 +182,6 @@ header {
     font-size: 5vh;
     background: transparent;
     color: rgb(250, 250, 250);
-    font-weight: bold;
     width: fit-content;
     transform: translateX(5vh);
     height: fit-content;
