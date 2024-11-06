@@ -39,19 +39,21 @@ To get a local copy of this project up and running, follow these steps:
    cd photo-album
 3. Open index.html in your preferred browser.
 
+### Currently Working On
+* Semantic class naming needs improvement
+
 ### Future Improvements
 * Implement user-side form validation with error messaging.
 * Enhance usability with clearer feedback for actions.
-* Translate all page elements to English for broader accessibility.
 * Refactor some CSS functionality into JavaScript for improved control.
 * Add comprehensive commenting throughout the code for better maintainability.
 * Enhance error handling across the application to improve robustness.
 * Streamline event handling logic for clarity and efficiency.
 
 ### Known Issues
-* Semantic class naming needs improvement for better readability and understanding.
+* Mobile version have no "Add new form"
+* Create button from "Add new" form disappears with a delay
 * Inconsistent sizing of elements throughout the gallery.
 * Consider switching from IDs to classes for like buttons to enhance flexibility.
 * Explicit logic required for user selection processes.
-Validation of JSON data before use to ensure data integrity.
-Further improvements to user experience for more intuitive interactions.
+* Validation of JSON data before use to ensure data integrity.
