@@ -43,6 +43,7 @@ To get a local copy of this project up and running, follow these steps:
 ### Currently Working On
 * Commenting throughout the code.
 * Flask API for backend
+* project structure
 
 ### Future Improvements
 * Enhance error handling.
