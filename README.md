@@ -42,16 +42,22 @@ To get a local copy of this project up and running, follow these steps:
 
 ## Known Issues
 ### UI
-* Mobile version have no "Add new form"
-* Create button in Form "Add new" disappears with a delay
+* behind like-buttons checkbox is visible
+* Mobile version
+	* make wish for into screen width 
+	* Form «Add new» doesn't appear after pressing Button «Add new» on main screen
 
 ### Optimisation 
 * Switching from IDs to classes for like buttons to enhance flexibility.
 * Validation of JSON data before use
 
 ## Future Improvements
-### UI
+### Core features
+* delete elements
+* 
 
+### UI
+<i>currently now changes planned, maybe add some later, maybe...</i>
 ### Optimisation 
 * set Node.js server with DB
 * Enhance error handlin
