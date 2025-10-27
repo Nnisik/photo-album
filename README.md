@@ -7,7 +7,7 @@
 ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
 ## Description
-MESTO is an interactive online photo gallery designed for users to share and showcase their images. The application 
+«MESTO» is an interactive online photo gallery designed for users to share and showcase their images. The application 
 allows for easy addition of photos, providing a user-friendly experience with modern design elements.
 
 ## Table of Contents
@@ -40,16 +40,21 @@ To get a local copy of this project up and running, follow these steps:
    cd photo-album
 3. Open index.html in your preferred browser.
 
-### Currently Working On
-* Commenting throughout the code.
-* Flask API for backend
-* project structure
-
-### Future Improvements
-* Enhance error handling.
-
-### Known Issues
+## Known Issues
+### UI
 * Mobile version have no "Add new form"
-* Create button from "Add new" form disappears with a delay
+* Create button in Form "Add new" disappears with a delay
+
+### Optimisation 
 * Switching from IDs to classes for like buttons to enhance flexibility.
-* Validation of JSON data before use.
+* Validation of JSON data before use
+
+## Future Improvements
+### UI
+
+### Optimisation 
+* set Node.js server with DB
+* Enhance error handlin
+
+### Other
+* optimise project's folders  
