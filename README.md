@@ -46,7 +46,6 @@ To get a local copy of this project up and running, follow these steps:
 	- [ ] mobile version UI issues
   		- [ ] page width
     	- [ ] form
-     	- [ ] 
 - [ ] tests
 - [ ] Lodash
 - [ ] CI/CD setup
