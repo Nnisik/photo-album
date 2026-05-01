@@ -40,6 +40,21 @@ To get a local copy of this project up and running, follow these steps:
    cd photo-album
 3. Open index.html in your preferred browser.
 
+## TODO
+- [ ] fix all currently existing problems
+	- [ ] like button
+	- [ ] mobile version UI issues
+  		- [ ] page width
+    	- [ ] form
+     	- [ ] 
+- [ ] tests
+- [ ] Lodash
+- [ ] CI/CD setup
+- [ ] switch to never stack (React) 
+- [ ] error handling *
+- [ ] optimise performance *
+- [ ] documentation * 
+
 ## Known Issues
 ### UI
 * behind like-buttons checkbox is visible
