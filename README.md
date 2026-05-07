@@ -40,41 +40,13 @@ To get a local copy of this project up and running, follow these steps:
    cd photo-album
 3. Open index.html in your preferred browser.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## TODO
-- [ ] fix all currently existing problems
-	- [ ] like button
-	- [ ] mobile version UI issues
-  		- [ ] page width
-    	- [ ] form
-- [ ] tests
-- [ ] Lodash
-- [ ] CI/CD setup
-- [ ] switch to never stack (React) 
-- [ ] error handling *
-- [ ] optimise performance *
-- [ ] documentation * 
-
-## Known Issues
-### UI
-* behind like-buttons checkbox is visible
-* Mobile version
-	* make wish for into screen width 
-	* Form «Add new» doesn't appear after pressing Button «Add new» on main screen
-
-### Optimisation 
-* Switching from IDs to classes for like buttons to enhance flexibility.
-* Validation of JSON data before use
-
-## Future Improvements
-### Core features
-* delete elements
-* 
-
-### UI
-<i>currently now changes planned, maybe add some later, maybe...</i>
-### Optimisation 
-* set Node.js server with DB
-* Enhance error handlin
-
-### Other
-* optimise project's folders  
+- [ ] Rewrite in React
+- [ ] Add Node.js backend
+- [ ] Add proper error handling
+- [ ] Add accessibility fixes
+- [ ] Add tests
+- [ ] Fix checkbox visibility
+- [ ] Fix mobile form display bug
