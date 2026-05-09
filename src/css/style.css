@@ -98,7 +98,7 @@ header {
   right: 10px;
   width: 25px;
   height: 25px;
-  background: url("../images/icons/icons8-trash-24.png");
+  background: url("../../data/images/icons/icons8-trash-24.png");
   border: none;
   outline: none;
 }
@@ -127,11 +127,11 @@ header {
   position: absolute;
   top: -5px;
   left: -25px;
-  background-image: url("../images/svg/heart-svgrepo-com (1).svg");
+  background-image: url("../../data/images/svg/heart-svgrepo-com (1).svg");
 }
 
 .like-btn:checked::after {
-  background-image: url("../images/svg/heart-liked.svg");
+  background-image: url("../../web/src/assets/images/svg/heart-liked.svg");
 }
 
 #add-new-pop-up {

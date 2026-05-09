@@ -1,0 +1,14 @@
+.container {
+    width: calc(100% - 48px);
+    margin: 12px auto 0 ;
+
+    border-bottom: 1px solid rgba(239, 239, 236, 0.5);
+}
+
+.logo {
+    font-size: 3.5rem;
+    line-height: 1;
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}

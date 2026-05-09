@@ -1,0 +1,40 @@
+.container {
+    width: calc(100% - 48px);
+    margin: 48px auto;
+    height: fit-content;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.gridCard {
+    background: lightskyblue;
+    border-radius: 24px;
+
+    & img {
+        width: 100%;
+        aspect-ratio: 5/6;
+        outline: none;
+        border: none;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+    }
+}
+
+.postInfo {
+    height: fit-content;
+    padding: 12px 24px;
+
+    & h3 {
+        font-size: 1.5rem;
+    }
+
+    & p {
+        font-size: 1rem;
+    }
+}
