@@ -1,0 +1,146 @@
+:root {
+    color-scheme: light dark;
+}
+
+.container {
+    width: calc(100% - 48px);
+    margin: 24px auto;
+    height: fit-content;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+.gridCard {
+    border-radius: 24px;
+    background: light-dark(#121212, #efefec);
+    color: light-dark(#efefec, #121212);
+
+    & img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        outline: none;
+        border: none;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+    }
+}
+
+.postInfo {
+    height: fit-content;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+
+    & h3 {
+        font-size: 1.5rem;
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & div {
+            width: fit-content;
+            height: fit-content;
+        }
+
+        & p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.menu {
+    width: calc(100% - 48px);
+    display: flex;
+    margin: 48px auto 0;
+    justify-content: end;
+}
+
+.button {
+    width: fit-content;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 6px 18px;
+    border: 5px solid light-dark(#121212, #efefec);
+    border-radius: 6px;
+    background: light-dark(#efefec, #121212);
+}
+
+.modal {
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(18, 18, 18, 0.6);
+    top: 0;
+}
+
+.modalContainer {
+    position: absolute;
+    z-index: 1001;
+    width: 500px;
+    height: fit-content;
+    background: light-dark(#121212, #efefec);
+    color: light-dark(#efefec, #121212);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6px 12px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.modalCloseButton {
+    background: #efefec;
+    color: #121212;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto 24px;
+    width: 80%;
+
+    & h2 {
+        text-align: center;
+        margin-bottom: 12px;
+        font-size: 2rem;
+    }
+
+    & input {
+        height: 5vh;
+        outline: none;
+        border: 1px solid rgba(59, 59, 59, 0.3);
+        border-radius: 6px;
+
+        color: light-dark(#121212, #efefec);
+        background: transparent;
+    }
+
+    & .button {
+        margin: 12px auto 0;
+        background: rgba(59, 59, 59, 0.6);
+        transition-duration: 0.3s;
+
+        &:hover {
+            background: rgba(59, 59, 59, 0.3);
+            color: #121212;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.container {
+    width: calc(100% - 48px);
+    height: fit-content;
+    margin: 24px auto;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.profileImage {
+    height: 75px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.userSection {
+    margin: 0 12px;
+
+    & h3 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    & p {
+        line-height: 1.5;
+    }
+}
