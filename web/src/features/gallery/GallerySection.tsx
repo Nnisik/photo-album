@@ -4,7 +4,8 @@ import GalleryCard from "./GalleryCard.tsx";
 import {IGalleryCardProps} from "../../types/IGalleryCardProps.ts";
 
 const GallerySection = () => {
-    const [posts, setPosts] = useState<IGalleryCardProps[]>([])
+
+    const [posts, setPosts] = useState<IGalleryCardProps[]>([]);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -17,10 +18,11 @@ const GallerySection = () => {
 
                 const data = await res.json();
                 setPosts(data);
-            } catch (err) {
+            } catch (err:any) {
                 console.error(err.message);
             }
         }
+
         fetchPosts();
     }, [])
 
