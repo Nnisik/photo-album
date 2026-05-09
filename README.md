@@ -43,7 +43,7 @@ To get a local copy of this project up and running, follow these steps:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## TODO
-- [ ] Rewrite in React
+- [x] Rewrite in React
 - [ ] Add Node.js backend
 - [ ] Add proper error handling
 - [ ] Add accessibility fixes
