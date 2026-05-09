@@ -6,7 +6,7 @@ const UserProfile = () => {
         <div className={styles.container}>
             <img src={file} alt={"Profile image"} className={styles.profileImage} />
             <div className={styles.userSection}>
-                <h3>Username</h3>
+                <h3>Jane Doe</h3>
                 <p>short profile description</p>
             </div>
         </div>
