@@ -1,35 +1,19 @@
 import styles from "../../styles/Gallery.module.css";
-import {useEffect, useState} from "react";
+import { useEffect } from "react";
 import GalleryCard from "./GalleryCard.tsx";
-import {IGalleryCardProps} from "../../types/IGalleryCardProps.ts";
+import { useGalleryStore } from "../../store/useGalleryStore.ts";
 
 const GallerySection = () => {
-
-    const [posts, setPosts] = useState<IGalleryCardProps[]>([]);
+    const { items, get } = useGalleryStore();
 
     useEffect(() => {
-        const fetchPosts = async () => {
-            try {
-                const res = await fetch("../../src/assets/json/data-posts.json");
-
-                if (!res.ok) {
-                    throw new Error("Fetch error");
-                }
-
-                const data = await res.json();
-                setPosts(data);
-            } catch (err:any) {
-                console.error(err.message);
-            }
-        }
-
-        fetchPosts();
-    }, [])
+        get();
+    }, [get]);
 
     return (
         <div className={styles.container}>
             <div className={styles.grid}>
-                {posts.map((post, key) => (
+                {items.map((post, key) => (
                     <GalleryCard
                         key={key}
                         id={post.id}

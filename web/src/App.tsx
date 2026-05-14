@@ -1,7 +1,7 @@
 import Header from "./components/Header.tsx";
 import UserProfile from "./features/profile/UserProfile.tsx";
 import GallerySection from "./features/gallery/GallerySection.tsx";
-import {useState} from "react";
+import { useState } from "react";
 import styles from "./styles/Gallery.module.css";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     }
 
     const [isVisible, changeVisibility] = useState<boolean>(true);
+
 
     return (
         <>
