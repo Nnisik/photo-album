@@ -46,7 +46,6 @@ To get a local copy of this project up and running, follow these steps:
 - [x] Rewrite in React
 - [ ] Add Node.js backend
 - [ ] Add proper error handling
-- [ ] Add accessibility fixes
 - [ ] Add tests
-- [ ] Fix checkbox visibility
+- [x] Fix checkbox visibility
 - [ ] Fix mobile form display bug
